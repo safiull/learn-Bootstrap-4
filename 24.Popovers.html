@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Popovers</title>
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+
+</head>
+<body>
+
+	<h1 class="display-4 text-center my-4">Popovers</h1>
+<div class="container">
+	 
+	 <!-- ######## START HERE ######### -->
+
+	<!-- POPOVERS -->
+
+	<button id="popover-2" class="btn btn-sm btn-primary" data-toggle="popover" title="Hello world!" data-content="Lorem Ipsum is simply dummy text of the printing and typesetting industry." data-placement="top">Toggle popover</button>
+
+	<button class="btn btn-sm btn-danger" data-toggle="popover" title="Hello world!" data-content="Lorem Ipsum is simply dummy text of the printing and typesetting industry." data-placement="left">Toggle popover</button>
+
+	<button class="btn btn-sm btn-warning" data-toggle="popover" title="Hello world!" data-content="Lorem Ipsum is simply dummy text of the printing and typesetting industry." data-placement="right">Toggle popover</button>
+
+	<button id="popover-1" class="btn btn-sm btn-success" data-toggle="popover" title="Hello world!" data-content="Lorem Ipsum is simply dummy text of the printing and typesetting industry." data-placement="bottom">Toggle popover</button>
+
+	<!-- DISMISSIBLE POPOVER -->
+<br><br>
+
+<!-- data-trigger="focus" eta use korle amra mouse diye jey jaygay clikc korbo she automecally chole jabe, but tokhon button a click korle jabe nah -->
+
+	<button class="btn btn-sm btn-info" data-trigger="focus" data-toggle="popover" title="Hello world!" data-content="Lorem Ipsum is simply dummy text of the printing and typesetting industry." data-placement="bottom">Toggle popover</button>
+
+	<br><hr>
+
+	<!-- CONTROL WITH JS -->
+
+	<button class="btn btn-secondary btn-sm" onClick="showPopover()">Show popover</button>
+
+	<button class="btn btn-info btn-sm" onClick="hidePopover()">Hide popover</button>
+
+	<button class="btn btn-danger btn-lg" onClick="togglePopover()">Toggle popover</button>
+
+
+ 
+<div style="margin-top: 300px">
+	 
+</div>
+
+</div>
+
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+
+    <script>
+    	$('[data-toggle="popover"]').popover();
+
+    	function showPopover(){
+    		$('#popover-2').popover('show');
+    	}
+
+    	function hidePopover(){
+    		$('#popover-2').popover('hide');
+    	}
+
+    	function togglePopover(){
+    		$('#popover-2').popover('toggle');
+    	}
+    </script>
+
+</body>
+</html>

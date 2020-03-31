@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>My first bootstrap work</title>
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+
+</head>
+<body>
+
+<h1 class="display-3 text-center my-4">List Groups & Badges</h1>
+
+<div class="container">
+
+	<!-- list group and list-gorup item class create for design our li element or list item -->
+
+	<ul class="list-group">
+		<li class="list-group-item">My list item one</li>
+		<li class="list-group-item">My list item two</li>
+		<li class="list-group-item">My list item Three</li>
+		<li class="list-group-item">My list item four</li>
+		<li class="list-group-item">My list item five</li>
+	</ul>
+
+	<br><br><br>
+
+	<!-- list-group-item-action class use for hover effect -->
+
+	<ul class="list-group">
+		<a class="list-group-item list-group-item-action active" href="#">My List Item One</a>
+		<a class="list-group-item list-group-item-action" href="#">My List Item Two</a>
+		<a class="list-group-item list-group-item-action" href="#">My List Item Three</a>
+		<a class="list-group-item list-group-item-action" href="#">My List Item Four</a>
+		<a class="list-group-item list-group-item-action" href="#">My List Item Five</a>
+		<a class="list-group-item list-group-item-action" href="#">My List Item Six</a>
+	</ul>
+
+	<br><br><br>
+
+
+	<ul class="list-group">
+		<li class="list-group-item list-group-item-action list-group-item-primary text-center font-weight-bold text-dark">My List item one</li>
+		<li class="list-group-item list-group-item-action list-group-item-secondary text-center">My List item one</li>
+		<li class="list-group-item list-group-item-action list-group-item-success text-center">My List item one</li>
+		<li class="list-group-item list-group-item-action list-group-item-info text-center">My List item one</li>
+		<li class="list-group-item list-group-item-action list-group-item-warning text-center">My List item one</li>
+		<li class="list-group-item list-group-item-action list-group-item-danger text-center">My List item one</li>
+	</ul>
+
+
+	<br><br><br>
+
+
+	<ul class="list-gorup">
+		<li class="list-group-item ">My List item one</li>
+		<li class="list-group-item ">My List item one<span class="badge badge-info"> 23</span></li>
+		<!-- class badge use for darkness -->
+		<!-- class badge-primary use for give a primary colour -->
+
+		<!-- class align-top for squer -->
+		<li class="list-group-item ">My List item one<span class="badge badge-primary align-top"> 43</span></li>
+		<li class="list-group-item ">My List item one</li>
+		<li class="list-group-item ">My List item one</li>
+		<li class="list-group-item ">My List item one</li>
+	</ul>
+
+	<br><br><br>
+
+
+	<!-- COUSTOM CONTENT -->
+
+	<div class="list-gorup">
+		<a class="list-group-item list-group-item-action active" href="#">
+
+			<!-- d-flex use for last element squer -->
+			<div class="d-flex">
+				<h5>My Post One </h5>
+				<small> 3 days ago</small>
+			</div>
+			<p class="mb-2">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever</p>
+			<small>By Safiull Alam</small>
+		</a>
+		<a class="list-group-item list-group-item-action" href="#">
+			<div>
+				<h5>My Post Two</h5>
+				<small>3 days ago</small>
+			</div>
+			<p class="mb-2">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever</p>
+			<small>By Safiull Alam</small>
+		</a>
+		<a class="list-group-item list-group-item-action" href="#">
+			<div>
+				<h5>My Post Three</h5>
+				<small>3 days ago</small>
+			</div>
+			<p class="mb-2">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever</p>
+			<small>By Safiull Alam</small>
+		</a>
+	</div>
+
+	<br><br><br>
+
+	<!-- class breadcrumb use for background colour -->
+	<ol class="breadcrumb">
+		<li class="breadcrumb-item active">Home</li>
+	</ol>
+	<ol class="breadcrumb">
+		<li class="breadcrumb-item"><a href="#">Home</a></li>
+		<li class="breadcrumb-item active">Users</li>
+	</ol>
+	<ol class="breadcrumb">
+		<!-- Breadcrumb-item use for a (/) i think devider -->
+		<li class="breadcrumb-item"><a href="#">Home</a></li>
+		<li class="breadcrumb-item">Users</li>
+		<li class="breadcrumb-item active">Moshiur</li>
+	</ol>
+
+	
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<br><br><br><br><br><br><br>
+
+
+
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+
+
+</body>
+</html>

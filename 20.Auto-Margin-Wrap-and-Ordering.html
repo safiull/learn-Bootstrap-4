@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Auto Margin Wrap and Order</title>
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+
+    <style type="text/css">
+    	.row-h1{
+    		background: #f4f4f4;
+    		height: 250px;
+    	}
+    	.item-h1{
+    		border: 1px solid #333;
+    	}
+    </style>
+
+</head>
+<body>
+	<h1 class="display-3 text-center my-4">Auto Margins & Wrapping</h1>
+	<div class="container">
+		
+		<!-- ##### START HERE #### -->
+
+		<!-- MR-AUTO -->
+		<!-- mr-auto class use korle er dan diker column gula ekbare right side a chole jabe -->
+		<div class="d-flex row-h1 flex-row">
+			<div class="mr-auto p-4 item-h1">Flex Item</div>
+			<div class="p-4 item-h1">Flex Item</div>
+			<div class="p-4 item-h1">Flex Item</div>
+		</div>
+
+	<br><br>
+
+	<!-- ML-AUTO -->
+
+	<!-- ml-auto use korle jekhane use korbo seta age faka jayga hoye jabe -->
+
+		<div class="d-flex row-h1 flex-row">
+			<div class="p-4 item-h1">Flex Item</div>
+			<div class="p-4 item-h1">Flex Item</div>
+			<div class="p-4 ml-auto item-h1">Flex Item</div>
+		</div>
+
+	<br><br>
+
+	<!-- MB-AUTO -->
+
+	<!-- flex-column for column -->
+
+	<!-- mb-auto nicher dike jayga houyar jonno -->
+		<div class="d-flex flex-column row-h1">
+			<div class="p-4 mb-auto item-h1">Flex Item</div>
+			<div class="p-4 item-h1">Flex Item</div>
+			<div class="p-4 item-h1">Flex Item</div>
+		</div>
+
+	<br><br>
+
+	<!-- MT-AUTO -->
+
+	<!-- mt-auto eta use korle jekhane use korbe seta nicher dike jayga khali hoye jabe -->
+
+		<div class="d-flex flex-column row-h1">
+			<div class="p-4 item-h1">Flex Item</div>
+			<div class="p-4 item-h1">Flex Item</div>
+			<div class="p-4 mt-auto item-h1">Flex Item</div>
+		</div>
+
+	<br><br>
+
+	<!-- NO WRAP -->
+
+	<!-- onek somoy amader column gula bahire chole jay ey jonno amake coustomize korte hobe, ekhane default vabe nowrap thake -->
+
+	<div class="d-flex flex-nowrap row-h1">
+		<div class="p-2 item-h1">Flex Item</div>
+			<div class="p-2 item-h1">Flex Item</div>
+			<div class="p-2 item-h1">Flex Item</div>
+			<div class="p-2 item-h1">Flex Item</div>
+			<div class="p-2 item-h1">Flex Item</div>
+			<div class="p-2 item-h1">Flex Item</div>
+			<div class="p-2 item-h1">Flex Item</div>
+			<div class="p-2 item-h1">Flex Item</div>
+			<div class="p-2 item-h1">Flex Item</div>
+			<div class="p-2 item-h1">Flex Item</div>
+
+	</div>
+
+	<br><br>
+
+	<!-- WRAP -->
+
+	<!-- jokhon amara flex-wrap use korbo then all item go to the amader joto toko jayga ase oita dokhol korbe
+	bahire jabe nah -->
+
+	<div class="d-flex flex-wrap row-h1">
+		<div class="p-2 item-h1">Flex Item</div>
+		<div class="p-2 item-h1">Flex Item</div>
+		<div class="p-2 item-h1">Flex Item</div>
+		<div class="p-2 item-h1">Flex Item</div>
+		<div class="p-2 item-h1">Flex Item</div>
+		<div class="p-2 item-h1">Flex Item</div>
+		<div class="p-2 item-h1">Flex Item</div>
+		<div class="p-2 item-h1">Flex Item</div>
+		<div class="p-2 item-h1">Flex Item</div>
+		<div class="p-2 item-h1">Flex Item</div>
+
+	</div>
+
+	<br><br>
+
+	<!-- ORDERING -->
+
+	<!-- order-sm-3 class for responsive small device -->
+
+	<div class="d-flex row-h1">
+		<div class="p-2 order-3 order-sm-1 item-h1">Flex Item 1</div>
+		<div class="p-2 order-2 order-sm-2 item-h1">Flex Item 2</div>
+		<div class="p-2 order-1 order-sm-3 item-h1">Flex Item 3</div>
+	</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ 
+<div style="margin-top: 300px">
+	
+</div>
+
+	</div>
+
+
+
+
+
+
+
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+
+
+</body>
+</html>

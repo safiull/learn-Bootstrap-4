@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Toollist</title>
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+
+</head>
+<body>
+
+	<h1 class="display-4 text-center my-4">Tooltips</h1>
+
+	<div class="container">
+
+	<!-- ####### START HERE ###### -->
+		
+	<!-- TOOLTIPS -->
+
+	<!-- title tag ta orthat amra jokhon kono link er upor hover korbo tokhon 1ta likha show korbe, er jonno amader button tag er moddhe (data-placement="top" data-toggle="tooltip" title="Hello World") ey attribute gula use korte hobe 
+	
+	& 
+
+	niche,
+	<script>
+   	$("[data-toggle=\"tooltip\"]").tooltip();
+   </script> ey code ti dite hobe
+
+	-->
+	
+	<button class="btn btn-primary" data-placement="top" data-toggle="tooltip" title="Hello World">Tooltips on top</button>
+
+	<!-- title tag show in left side -->
+
+	<button class="btn btn-primary" data-placement="left" data-toggle="tooltip" title="Hello World">Tooltips on left</button>
+
+	<!-- title tag show in right side -->
+
+	<button class="btn btn-primary" data-placement="right" data-toggle="tooltip" title="Hello World">Tooltips on right</button>
+
+	<!-- title tag show in bottom side -->
+
+	<button class="btn btn-primary" data-placement="bottom" data-toggle="tooltip" title="Hello World">Tooltips on bottom</button>
+<br><br>
+
+	<!-- TOOLTIPS WITH HTML -->
+
+	<!-- title tag er moddhe kono html show korate hole title tag er vitor html tag dite hobe tarpor ( data-html="true" ) ey attribute ta use korte hobe -->
+
+<button id="hello" class="btn btn-info" data-placement="top" data-toggle="tooltip" data-html="true" title="<h2>Hello World</h2><p>Lorem Ipsum is simply dummy texta type specimen book. It has survived not only five centuries,</p>">Tooltips on Top</button>
+
+<br><br>
+<hr>
+
+
+<!-- 	TRIGGER WITH JS -->
+
+<!-- amra emon ekta kaj korbo je amra jokhon ey button ta te click korbo tokhon upore button er title ta show korbe, 
+er jonno first a 1ta attribute use korte hobe ( onClick="showToolTip()" ) eta use korte hobe.
+
+then 1ta function create korte hobe,
+
+function showToolTip(){
+   		$('$hello') tooltip('show')
+   	}
+
+   	ekhane hello name jey id ta ase ey id ta amra jey jaygay diye dibo oitai show korbe -->
+
+
+	<button onClick="showToolTip()" class="btn btn-dark">Show Tooltip</button>
+
+<!-- hide korar jonno just show er jaygay hide gula use korley hobe -->
+	<button onClick="hideToolTip()" class="btn btn-success">Hide Tooltip</button>
+
+	<!-- 1ta button er moddhey ey kaj ta korte chaile hide er jaygay toggle use korte hobe -->
+
+	<button onClick="toggleToolTip()" class="btn btn-danger">Toggle Tooltip</button>
+
+
+
+
+
+
+<div style="margin-top: 300px">
+	
+</div>
+
+</div>
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+
+
+   <script>
+   	$("[data-toggle=\"tooltip\"]").tooltip();
+
+
+   	function showToolTip(){
+   		$('#hello').tooltip('show');
+   	}
+
+   	function hideToolTip(){
+   		$('#hello').tooltip('hide');
+   	}
+
+   	function toggleToolTip(){
+   		$('#hello').tooltip('toggle');
+   	}
+
+   	
+   </script>
+
+
+</body>
+</html>

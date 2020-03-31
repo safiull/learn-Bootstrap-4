@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>My first bootstrap work</title>
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+
+</head>
+<body>
+
+	<h1 class="display-3 text-center my-4">Grid Alignment</h1>
+
+<div class="container">
+	<!-- ########## START HERE ######### -->
+
+	<!-- VERTICAL ALIGNMENT -->
+
+<!-- align-items-start class use for our all word position is start position -->
+
+	<div class="container">
+		<!-- when I use column then i need to use align-sefl-start -->
+		<!-- row hole items R column hole self -->
+		<div class="row align-items-start" style="height: 200px;border: 1px solid #333; margin-bottom: 10px">
+				<div class="col">
+					Top Aligned Text
+				</div>
+				<div class="col">
+					Top Aligned Text
+				</div>
+				<div class="col">
+					Top Aligned Text
+				</div>
+			
+			
+		</div>
+		<div class="row align-items-center" style="height: 200px;border: 1px solid #333; margin-bottom: 10px">
+				<div class="col">
+					Top Aligned Text
+				</div>
+				<div class="col">
+					Top Aligned Text
+				</div>
+				<div class="col">
+					Top Aligned Text
+				</div>
+			
+			
+		</div>
+		<div class="row align-items-end" style="height: 200px;border: 1px solid #333; margin-bottom: 10px">
+				<div class="col">
+					Top Aligned Text
+				</div>
+				<div class="col">
+					Top Aligned Text
+				</div>
+				<div class="col">
+					Top Aligned Text
+				</div>
+		</div>
+	</div>
+
+		<div class="container">
+			<div class="row" style="height: 200px;border: 1px solid #333; margin-bottom: 10px">
+					<div class="col align-self-start">
+						Top Aligned
+					</div>
+					<div class="col align-self-center">
+						Middle Aligned
+					</div>
+					<div class="col align-self-end">
+						Bottom Aligned
+					</div>
+				
+				
+			</div>
+	</div>
+<br><br>
+	<!-- HORIZONTAL ALIGNED COLS -->
+
+	<!-- justify-content-start class for the left postion our all content -->
+	<div class="container">
+		<div class="row justify-content-start" style="height: 200px;border: 1px solid #333;">
+					<div class="col-4">
+						Left Aligned
+					</div>
+					<div class="col-4">
+						Left Aligned
+					</div>
+					
+				
+				
+			</div>
+			<div class="row justify-content-center" style="height: 200px;border: 1px solid #333;">
+					<div class="col-4">
+						Center Aligned
+					</div>
+					<div class="col-4">
+						Center Aligned
+					</div>
+					
+				
+				
+			</div>
+
+			<div class="row justify-content-end" style="height: 200px;border: 1px solid #333;">
+					<div class="col-4">
+						Right Aligned
+					</div>
+					<div class="col-4">
+						Right Aligned
+					</div>
+					
+				
+				
+			</div>
+
+			<!-- content around use kore 2tar left side a oi jayga khali hoye jabe -->
+			<div class="row justify-content-around" style="height: 200px;border: 1px solid #333;">
+					<div class="col-4">
+						Content around
+					</div>
+					<div class="col-4">
+						Content around
+					</div>
+					
+				
+				
+			</div>
+
+			<!-- justify-content-between eta use korle 2 dike content gula lege jabe -->
+
+			<div class="row justify-content-between" style="height: 200px;border: 1px solid #333;">
+					<div class="col-4">
+						Right Aligned
+					</div>
+					<div class="col-4">
+						Right Aligned
+					</div>
+					
+				
+				
+			</div>
+
+	</div>
+
+	<!-- no-gutters class use for clear extra gap between last two column -->
+
+	<div class="row no-gutters">
+		<div class="col-9">
+			<div class="card">
+				<div class="card-body">
+					Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s
+				</div>
+			</div>
+			
+		</div>
+		<div class="col-4">
+			<div class="card">
+				<div class="card-body">
+					Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s
+				</div>
+			</div>
+			
+		</div>
+		<div class="col-6">
+			<div class="card">
+				<div class="card-body">
+					Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s
+				</div>
+			</div>
+			
+		</div>
+	</div>
+
+
+
+
+
+
+
+<div style="margin-top: 200px">
+	
+</div>
+
+</div>
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+
+
+</body>
+</html>

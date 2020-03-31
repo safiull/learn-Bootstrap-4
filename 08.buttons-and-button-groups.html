@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Buttons And Butto groups</title>
+    <link rel="stylesheet" type="text/css" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+
+</head>
+<body>
+
+	<h2 class="display-4 text-center mb-5">Buttons & Button Groups</h2>
+
+<div class="container">
+
+	<button class="btn btn-primary" type="button">Primary</button>
+	<button class="btn btn-secondary" type="button">Secondary</button>
+	<button class="btn btn-success" type="button">Success</button>
+	<button class="btn btn-info" type="button">Info</button>
+	<button class="btn btn-warning" type="button">Warning</button>
+	<button class="btn btn-danger" type="button">Danger</button>
+	<button class="btn btn-link" type="button">Link</button>
+
+	<br><br>
+
+	<!-- ###### Button tags ###### -->
+	<a class="btn btn-success" href="$" role="button">Link</a>
+	<button class="btn btn-info" type="submit">Button</button>
+	<input class="btn btn-warning" type="button" name="" value="Input">
+	<input class="btn btn-danger" type="submit" name="" value="Submit">
+	<input class="btn btn-primary" type="reset" name="" value="Reset">
+
+
+	<br><br>
+
+	<!-- ##### Outline Button( That means hover effect ) ###### -->
+	<button class="btn btn-outline-primary" type="button">Primary</button>
+	<button class="btn btn-outline-secondary" type="button">Secondary</button>
+	<button class="btn btn-outline-success" type="button">Success</button>
+	<button class="btn btn-outline-info" type="button">Info</button>
+	<button class="btn btn-outline-warning" type="button">Warning</button>
+	<button class="btn btn-outline-danger" type="button">Danger</button>
+
+<br><br>
+	
+	<!-- i use btn-lg for large button and i use Tag and extra class for font awesome-->
+
+	<button class="btn btn-primary btn-lg" type="button"><i class="fa fa-user"></i>  Large Button</button>
+
+	<!-- sm means small size button -->
+	<button class="btn btn-primary ml-3 btn-sm" type="button">Small Button</button>
+
+	<br>
+	<br>
+
+	<!-- btn-block means block line button -->
+	<button class="btn btn-danger btn-block" type="button">Block level button</button>
+
+	<br><br>
+
+	<button class="btn btn-outline-info regular" type="button">Retular Button</button>
+	<button class="btn btn-outline-info active" type="button">Active Button</button>
+	<button class="btn btn-outline-info disabled" type="button">Disabled Button</button>
+
+	<br><br>
+
+
+	<div>
+		<!-- i use btn-toggle and data-toggle for attructive button/// when i click buttun then this butto show me, You click this button -->
+		<button type="button" class="btn btn-primary btn-toggle" data-toggle="button">
+			My Dropdown
+		</button>
+	</div>
+
+	<br><br>
+
+
+	<!-- Dropdowns button -->
+	<!-- if i want to set my dropdown button in upper positon then i just set ( dropup ) -->
+	<div class="dropdown dropup">
+		<button type="button" class="btn btn-warning dropdown-toggle" data-toggle="dropdown">
+			My Dropdown
+		</button>
+		<div class="dropdown-menu">
+			<a class="dropdown-item" href="#">Home</a>
+			<a class="dropdown-item" href="#">Contact</a>
+			<a class="dropdown-item" href="#">Gallery</a>
+			<a class="dropdown-item" href="#">Blog</a>
+			<a class="dropdown-item" href="#">Portfolio</a>
+		</div>
+	</div>
+
+
+	<br><br><br><br>
+	
+	<!-- SPLIT DROPDOWNS -->
+
+	<div class="btn-group">
+		<button type="button" class="btn btn-info">My Button</button>
+		<button type="button" class="btn btn-info dropdown-toggle dropdown-toggle-split" data-toggle="dropdown">
+			<!-- sr-only just show in naviagtion icon -->
+			<span class="sr-only">Toggle Dropdown</span>
+		</button>
+		<div class="dropdown-menu">
+			<a class="dropdown-item" href="#">Menu Item</a>
+			<a class="dropdown-item" href="#">Menu Item</a>
+			<a class="dropdown-item" href="#">Menu Item</a>
+			
+			<div class="dropdown-divider"></div>
+			<a class="dropdown-item" href="#">Lint Four</a>
+		</div>
+	</div>
+
+<br><br>
+
+
+	<div class="btn-group">
+		<button class="btn btn-secondary" type="button">Left</button>
+		<button class="btn btn-secondary active" type="button">Middle</button>
+		<button class="btn btn-secondary" type="button">Right</button>
+	</div>
+
+
+
+	<br><br><br>
+
+
+	<!-- Create toolbar -->
+<div class="btn-toolbar" role="toolbar">
+	<div class="btn-group mr-3">
+		<button class="btn btn-primary" type="button">1</button>
+		<button class="btn btn-primary" type="button">2</button>
+		<button class="btn btn-primary" type="button">3</button>
+		<button class="btn btn-primary" type="button">4</button>
+	</div>
+	<div class="btn-group mr-3">
+		<button class="btn btn-info" type="button">5</button>
+		<button class="btn btn-info" type="button">6</button>
+		<button class="btn btn-info" type="button">7</button>
+	</div>
+	<div class="btn-group">
+		<button class="btn btn-danger" type="button">8</button>
+	</div>
+</div>
+	
+	<br><br><br>
+	<!-- I use btn-group-vertical for vertical button -->
+	<div class="btn-group-vertical">
+		<button class="btn btn-success" type="button">Left</button>
+		<button class="btn btn-success" type="button">Middle</button>
+		<button class="btn btn-success" type="button">Right</button>
+	</div>
+
+
+
+
+
+
+	<br><br><br><br>
+	<br><br><br><br>
+	<br><br><br><br>
+
+
+
+
+
+
+
+</div>
+
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+
+
+</body>
+</html>

@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Carousel Slider</title>
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+
+</head>
+<body>
+
+	<h1 class="display-4 text-center my-4">Carousel Slider</h1>
+	<div class="container">
+
+		<!-- ### START HERE ### -->
+		
+	<!-- SLIDER -->
+	
+	<div id="slider1" class="carousel slide" data-ride="carousel">
+		<!-- carousel-indicator for icon  -->
+		<ol class="carousel-indicators">
+			<li class="active" data-target="#slider1" data-slide-to="0"></li>
+			<li data-target="#slider1" data-slide-to="1"></li>
+			<li data-target="#slider1" data-slide-to="2"></li>
+		</ol>
+		<div class="carousel-inner" role="listbox">
+
+			<!-- active class use korsi karon amara eta first positon a rakhbo -->
+			<div class="carousel-item active">
+				<!-- d-block and img-fluid use na korle image ta fully kaj korbe nah, -->
+				<img class="d-block img-fluid" src="img/alcohol.jpg">
+				<div class="carousel-caption">
+					<h3>Hello world</h3>
+					<p>Hello I am Safiull ALam ahsa kori apnara sobai valo asen</p>
+				</div>
+			</div>
+			<div class="carousel-item">
+				<img class="d-block img-fluid" src="img/awesome.jpg">
+				<div class="carousel-caption">
+					<h3>world</h3>
+					<p>Hello I am Safiull ALam ahsa kori apnara sobai valo asen</p>
+				</div>
+			</div>
+			<div class="carousel-item">
+				<img class="d-block img-fluid" src="img/road.jpg">
+				<div class="carousel-caption">
+					<h3>Hello world</h3>
+					<p>Hello I am Safiull ALam ahsa kori apnara sobai valo asen</p>
+				</div>
+			</div>
+		</div>
+		<!-- THIS WORK FOR PREVIOUS ICON -->
+
+		<!-- data-slide="prev" eta na dile prebious icon kaj korbe nah -->
+		<a href="#slider1" class="carousel-control-prev" data-slide="prev">
+			<!-- carousel-control-prev-icon for previous icon -->
+			<span class="carousel-control-prev-icon"></span>
+		</a>
+		<a href="#slider1" class="carousel-control-next" data-slide="next">
+			
+			<span class="carousel-control-next-icon"></span>
+		</a>
+	</div>
+
+
+
+
+
+
+
+
+
+	</div>
+
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+
+
+	<!-- for slider delay -->
+	<!-- pause for slider stop -->
+<!-- 	wrap: false dile slider 1bar er beshi asbe nah -->
+
+<!-- keyboard:false kore dile keyboard er arow diye click korle kaj korbe nah -->
+    
+
+
+    <script>
+    	$(".carousel").carousel({
+    		interval : 2000,
+    		pause: "hover",
+    		wrap: false,
+    		keyboard:false;
+    	})
+    </script>
+
+
+</body>
+</html>
